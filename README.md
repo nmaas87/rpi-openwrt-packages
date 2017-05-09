@@ -1,6 +1,7 @@
 # rpi-openwrt-packages
 
-Taken from https://sourceforge.net/projects/atomproducts/
+Original work by https://sourceforge.net/projects/atomproducts/ - I have taken the sourcecode from their svn and updated the libraries so that it is useable again - in hopes to preserve their awesome work - and put it to good use in my next projects :).
+Thanks a lot to the AtomEmbedded Machine Learning Products Team :)!
 
 ### Updated wiringpi 
 from 2.21 ([10.10.2014](https://git.drogon.net/?p=wiringPi;a=commit;h=0a9fdeb29d31609ef834f050bdb8a7a65cd35e2b)) to 2.44 ([03.03.2017](https://git.drogon.net/?p=wiringPi;a=commit;h=96344ff7125182989f98d3be8d111952a8f74e15))
