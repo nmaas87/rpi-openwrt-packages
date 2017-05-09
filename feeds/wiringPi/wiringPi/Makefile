@@ -1,8 +1,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=wiringPi
-PKG_VERSION:=2015-09-01
-PKG_RELEASE:=1
+PKG_VERSION:=2016-12-15
+PKG_RELEASE:=2.36
 #PKG_SOURCE_PROTO:=svn
 #PKG_SOURCE_URL:=http://svn.code.sf.net/p/atomproducts/svn/trunk/src/wiringPi
 #PKG_SOURCE_PROTO:=git
