@@ -50,7 +50,8 @@ define Package/python-smbus
   SECTION:=lang
   CATEGORY:=Languages
   TITLE:=Python bindings for the SMBUS
-  DEPENDS:=+PACKAGE_python-smbus:python-mini +i2c-tools-clone
+  DEPENDS:=+PACKAGE_python-smbus:python-light +i2c-tools-clone
+  #DEPENDS:=+PACKAGE_python-smbus:python-mini +i2c-tools-clone
 endef
 
 define Package/i2c-tools-clone/description
