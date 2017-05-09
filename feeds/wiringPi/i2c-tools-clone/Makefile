@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=i2c-tools
 PKG_VERSION:=2017-04-03
-PKG_RELEASE:=3.1.2
+PKG_RELEASE:=3.1.2+
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/groeck/i2c-tools
