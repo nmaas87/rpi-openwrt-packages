@@ -1,12 +1,12 @@
 #
 # Makefile:
-#	wiringPi - Wiring Compatable library for the Raspberry Pi
+#	wiringPi - A "wiring" library for the Raspberry Pi
 #	https://projects.drogon.net/wiring-pi
 #
 #	Copyright (c) 2012-2013 Gordon Henderson
 #################################################################################
 # This file is part of wiringPi:
-#	Wiring Compatable library for the Raspberry Pi
+#	A "wiring" library for the Raspberry Pi
 #
 #    wiringPi is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Lesser General Public License as published by
@@ -22,6 +22,9 @@
 #    along with wiringPi.  If not, see <http://www.gnu.org/licenses/>.
 #################################################################################
 
+ifneq ($V,1)
+Q ?= @
+endif
 
 #DEBUG	= -g -O0
 DEBUG	= -O3
@@ -43,37 +46,37 @@ BINS	=	$(SRC:.c=)
 all:	$(BINS)
 
 blink:	blink.o
-	@echo [link]
-	@$(CC) -o $@ blink.o $(LDFLAGS) $(LDLIBS)
+	$Q echo [link]
+	$Q $(CC) -o $@ blink.o $(LDFLAGS) $(LDLIBS)
 
 blink-io:	blink-io.o
-	@echo [link]
-	@$(CC) -o $@ blink-io.o $(LDFLAGS) $(LDLIBS)
+	$Q echo [link]
+	$Q $(CC) -o $@ blink-io.o $(LDFLAGS) $(LDLIBS)
 
 button:	button.o
-	@echo [link]
-	@$(CC) -o $@ button.o $(LDFLAGS) $(LDLIBS)
+	$Q echo [link]
+	$Q $(CC) -o $@ button.o $(LDFLAGS) $(LDLIBS)
 
 volts:	volts.o
-	@echo [link]
-	@$(CC) -o $@ volts.o $(LDFLAGS) $(LDLIBS)
+	$Q echo [link]
+	$Q $(CC) -o $@ volts.o $(LDFLAGS) $(LDLIBS)
 
 bright:	bright.o
-	@echo [link]
-	@$(CC) -o $@ bright.o $(LDFLAGS) $(LDLIBS)
+	$Q echo [link]
+	$Q $(CC) -o $@ bright.o $(LDFLAGS) $(LDLIBS)
 
 
 .c.o:
-	@echo [CC] $<
-	@$(CC) -c $(CFLAGS) $< -o $@
+	$Q echo [CC] $<
+	$Q $(CC) -c $(CFLAGS) $< -o $@
 
 clean:
-	@echo "[Clean]"
-	@rm -f $(OBJ) *~ core tags $(BINS)
+	$Q echo "[Clean]"
+	$Q rm -f $(OBJ) *~ core tags $(BINS)
 
 tags:	$(SRC)
-	@echo [ctags]
-	@ctags $(SRC)
+	$Q echo [ctags]
+	$Q ctags $(SRC)
 
 depend:
 	makedepend -Y $(SRC)

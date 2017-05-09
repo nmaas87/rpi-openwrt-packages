@@ -52,6 +52,7 @@
 #include <string.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
+#include <asm/ioctl.h>
 
 #include "wiringPi.h"
 #include "wiringPiI2C.h"
@@ -218,21 +219,15 @@ int wiringPiI2CSetupInterface (const char *device, int devId)
 
 int wiringPiI2CSetup (const int devId)
 {
+  int rev ;
   const char *device ;
-  int model, rev, mem, maker, overVolted ;
 
-  piBoardId (&model, &rev, &mem, &maker, &overVolted) ;
+  rev = piGpioLayout () ;
 
-  if ( model == PI_MODEL_ODROIDC )
+  if (rev == 1)
+    device = "/dev/i2c-0" ;
+  else
     device = "/dev/i2c-1" ;
-  else  {
-    rev = piBoardRev () ;
-
-    if (rev == 1)
-      device = "/dev/i2c-0" ;
-    else
-      device = "/dev/i2c-1" ;
-  }
 
   return wiringPiI2CSetupInterface (device, devId) ;
 }
