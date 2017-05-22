@@ -26,7 +26,7 @@
 
 #define I2C_BUFFER_SIZE		32
 
-#define I2C_DEFAULT_ADAPTER	0
+#define I2C_DEFAULT_ADAPTER	1
 
 
 // for debugging
