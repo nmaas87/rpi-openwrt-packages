@@ -6,7 +6,7 @@
 #
 
 include $(TOPDIR)/rules.mk
-PKG_NAME:=ssd1306_i2c
+PKG_NAME:=ssd1306-i2c
 PKG_VERSION:=0.3
 PKG_RELEASE:=1
 
@@ -22,6 +22,7 @@ define Package/ssd1306-i2c
   SECTION:=lang
   CATEGORY:=Languages
   TITLE:=ssd1306-i2c
+  URL:=http://github.com/nmaas87/bsb_ssd1306_i2c
   DEPENDS:=+python-light
 endef
 
