@@ -9,6 +9,10 @@ from 2.21 ([10.10.2014](https://git.drogon.net/?p=wiringPi;a=commit;h=0a9fdeb29d
 ### Updated i2c-tools
 from 3.10 ([07.07.2015](https://github.com/groeck/i2c-tools/commit/9726bed900c1e4a46b2c024a43dec987215570be)) to 3.12 ([03.04.2017](https://github.com/groeck/i2c-tools/commit/fe13737567e7733d8cbe587a08ccb7af5ff8ee8e))
 
+### Fetched Onion Omega 2 i2c-exp-driver
+from [22.05.2017](https://github.com/OnionIoT/OpenWRT-Packages/commit/6ef97880bf5a33936a6c73e3b0c249319b4cc648)
+This includes SSD1306 OLED Support for Python, I patched the I2C lib to use the I2C Port 1 and not 0 (Omega does use Port 0 on its Boards, RPi uses Port 1, patched [here](https://github.com/nmaas87/rpi-openwrt-packages/blob/master/src/i2c-exp-driver/include/onion-i2c.h#L29) by changing 0 to 1. 
+
 ## How To:
 
 #### Update feeds.conf in root Directory, add:
@@ -39,3 +43,7 @@ make menuconfig
 ##### libi2c
 - Category Libraries
 - Section libs
+
+##### i2c-exp-driver
+- Category Onion
+- Section Libraries
