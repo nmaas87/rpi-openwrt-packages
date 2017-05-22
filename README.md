@@ -16,6 +16,10 @@ from 3.10 ([07.07.2015](https://github.com/groeck/i2c-tools/commit/9726bed900c1e
 from [22.05.2017](https://github.com/OnionIoT/OpenWRT-Packages/commit/6ef97880bf5a33936a6c73e3b0c249319b4cc648)
 This includes SSD1306 OLED Support for Python, I patched the I2C lib to use the I2C Port 1 and not 0 (Omega does use Port 0 on its Boards, RPi uses Port 1, patched [here](https://github.com/nmaas87/rpi-openwrt-packages/blob/master/src/i2c-exp-driver/include/onion-i2c.h#L29) by changing 0 to 1. 
 
+### Feteched Python SSD1306
+from [22.05.2017](https://github.com/polkabana/bsb_ssd1306_i2c)
+Another SSD1306 OLED Support for Python, based on Adafruit Code. I patched it to be compatible with latest OpenWRT Trunk.
+
 ## How To:
 
 #### Update feeds.conf in root Directory, add:
