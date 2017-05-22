@@ -10,13 +10,6 @@ PKG_NAME:=ssd1306_i2c
 PKG_VERSION:=0.3
 PKG_RELEASE:=1
 
-
-
-PKG_SOURCE_PROTO:=svn
-PKG_SOURCE_URL:=https://github.com/nmaas87/rpi-openwrt-packages/trunk/src/bsb_ssd1306_i2c
-PKG_SOURCE_SUBDIR:=$(PKG_NAME)
-PKG_SOURCE_VERSION:=HEAD
-PKG_SOURCE:=$(PKG_NAME).tar.gz
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_BUILD_DEPENDS:=python
@@ -38,7 +31,7 @@ endef
 
 define Build/Prepare
 	mkdir -p $(PKG_BUILD_DIR)
-	$(CP) ./* $(PKG_BUILD_DIR)/
+	$(CP) ./src/* $(PKG_BUILD_DIR)/
 endef
 
 define Build/Compile
