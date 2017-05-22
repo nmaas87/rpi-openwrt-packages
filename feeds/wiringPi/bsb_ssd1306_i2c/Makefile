@@ -6,10 +6,11 @@
 #
 
 include $(TOPDIR)/rules.mk
-
 PKG_NAME:=ssd1306_i2c
 PKG_VERSION:=0.3
 PKG_RELEASE:=1
+
+
 
 PKG_SOURCE_PROTO:=svn
 PKG_SOURCE_URL:=https://github.com/nmaas87/rpi-openwrt-packages/trunk/src/bsb_ssd1306_i2c
@@ -28,7 +29,6 @@ define Package/ssd1306-i2c
   SECTION:=lang
   CATEGORY:=Languages
   TITLE:=ssd1306-i2c
-  URL:=http://github.com/polkabana/bsb_ssd1306_i2c
   DEPENDS:=+python-light
 endef
 
