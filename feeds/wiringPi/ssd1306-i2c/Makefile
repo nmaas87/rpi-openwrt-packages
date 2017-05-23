@@ -22,7 +22,7 @@ define Package/ssd1306-i2c
   SECTION:=lang
   CATEGORY:=Languages
   TITLE:=ssd1306-i2c
-  URL:=http://github.com/nmaas87/bsb_ssd1306_i2c
+  #URL:=http://github.com/nmaas87/bsb_ssd1306_i2c
   DEPENDS:=+python-light
 endef
 

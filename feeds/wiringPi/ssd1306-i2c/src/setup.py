@@ -11,7 +11,7 @@ classifiers = ['Development Status :: 5 - Production/Stable',
                'Topic :: System :: Hardware',
                'Topic :: System :: Hardware :: Hardware Drivers']
 
-setup(	name	= "ssd1306_i2c",
+setup(	name	= "ssd1306-i2c",
 	version		= "0.3",
 	description	= "Python bindings for SSD1306 OLED display via I2C bus",
 	# long_description = open('README.md').read() + "\n" + open('CHANGELOG.md').read(),
@@ -22,5 +22,5 @@ setup(	name	= "ssd1306_i2c",
 	license		= "GPLv2",
 	classifiers	= classifiers,
 	url		= "https://github.com/polkabana/bsb_ssd1306_i2c",
-	ext_modules	= [Extension("ssd1306_i2c", ["ssd1306_i2c_module.c"])]
+	ext_modules	= [Extension("ssd1306-i2c", ["ssd1306_i2c_module.c"])]
 )
