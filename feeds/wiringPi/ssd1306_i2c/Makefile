@@ -6,7 +6,7 @@
 #
 
 include $(TOPDIR)/rules.mk
-PKG_NAME:=ssd1306-i2c
+PKG_NAME:=ssd1306_i2c
 PKG_VERSION:=0.3
 PKG_RELEASE:=1
 
@@ -17,16 +17,16 @@ PKG_BUILD_DEPENDS:=python
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
 
-define Package/ssd1306-i2c
+define Package/ssd1306_i2c
   SUBMENU:=Python
   SECTION:=lang
   CATEGORY:=Languages
-  TITLE:=ssd1306-i2c
+  TITLE:=ssd1306_i2c
   #URL:=http://github.com/nmaas87/bsb_ssd1306_i2c
   DEPENDS:=+python-light
 endef
 
-define Package/ssd1306-i2c/description
+define Package/ssd1306_i2c/description
   serial port python bindings
 endef
 
@@ -41,11 +41,11 @@ define Build/Compile
 	)
 endef
 
-define Package/ssd1306-i2c/install
+define Package/ssd1306_i2c/install
 	$(INSTALL_DIR) $(1)$(PYTHON_PKG_DIR)
 	$(CP) \
 	    $(PKG_INSTALL_DIR)$(PYTHON_PKG_DIR)/* \
 	    $(1)$(PYTHON_PKG_DIR)/
 endef
 
-$(eval $(call BuildPackage,ssd1306-i2c))
+$(eval $(call BuildPackage,ssd1306_i2c))
