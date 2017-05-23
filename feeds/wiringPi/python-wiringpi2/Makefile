@@ -48,10 +48,10 @@ define Build/Compile
 endef
 
 define Package/python-wiringpi2/install
-        $(INSTALL_DIR) $(1)$(PYTHON_PKG_DIR)
-        $(CP) \
-            $(PKG_INSTALL_DIR)$(PYTHON_PKG_DIR)/* \
-            $(1)$(PYTHON_PKG_DIR)
+	$(INSTALL_DIR) $(1)$(PYTHON_PKG_DIR)
+	$(CP) \
+	$(PKG_INSTALL_DIR)$(PYTHON_PKG_DIR)/* \
+	$(1)$(PYTHON_PKG_DIR)
 endef
 
 $(eval $(call BuildPackage,python-wiringpi2))
