@@ -69,6 +69,9 @@ make menuconfig
 - Section lang
 - Submenu Python
 
+
+### Binary OPKG Repo
+
 Use wiringPi files with i.e.
 ```
 src/gz wiringPi https://nmaas87.github.io/rpi-openwrt-packages/bin_packages/wiringPi
