@@ -70,5 +70,7 @@ make menuconfig
 - Submenu Python
 
 Use wiringPi files with i.e.
+```
 src/gz wiringPi https://nmaas87.github.io/rpi-openwrt-packages/bin_packages/wiringPi
+```
 in /etc/customfeeds.conf
