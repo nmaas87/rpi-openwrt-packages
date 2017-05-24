@@ -9,7 +9,7 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=paho-mqtt
+PKG_NAME:=paho_mqtt
 PKG_VERSION:=1.2.3
 PKG_RELEASE:=1
 
@@ -26,16 +26,16 @@ PKG_BUILD_DEPENDS:=python
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
 
-define Package/paho-mqtt
+define Package/paho_mqtt
  SUBMENU:=Python
  SECTION:=lang
  CATEGORY:=Languages
- TITLE:=paho-mqtt
+ TITLE:=paho_mqtt
  #URL:=
  DEPENDS:=+python
 endef
 
-define Package/paho-mqtt/description
+define Package/paho_mqtt/description
  This package contains Python bindings for mqtt
 endef
 
@@ -49,11 +49,11 @@ define Build/Compile
   $(call Build/Compile/PyMod,,install --root="$(PKG_INSTALL_DIR)" --prefix="/usr")
 endef
 
-define Package/paho-mqtt/install
+define Package/paho_mqtt/install
 	$(INSTALL_DIR) $(1)$(PYTHON_PKG_DIR)
 	$(CP) \
 	$(PKG_INSTALL_DIR)$(PYTHON_PKG_DIR)/* \
 	$(1)$(PYTHON_PKG_DIR)
 endef
 
-$(eval $(call BuildPackage,paho-mqtt))
+$(eval $(call BuildPackage,paho_mqtt))
