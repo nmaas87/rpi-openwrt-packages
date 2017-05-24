@@ -27,16 +27,16 @@ include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
 
 define Package/python-paho-mqtt
-	SUBMENU:=Python
-	SECTION:=lang
-	CATEGORY:=Languages
-	TITLE:=python-paho-mqtt
-	#URL:=
-	DEPENDS:=+python-light
+  SUBMENU:=Python
+  SECTION:=lang
+  CATEGORY:=Languages
+  TITLE:=python-paho-mqtt
+  #URL:=
+  DEPENDS:=+python-light
 endef
 
 define Package/python-paho-mqtt/description
-	MQTT version 3.1.1 client class
+  MQTT version 3.1.1 client class
 endef
 
 # added for build on local src
@@ -46,7 +46,7 @@ define Build/Prepare
 endef
 
 define Build/Compile
-	$(call Build/Compile/PyMod,,install --prefix=/usr --root="$(PKG_INSTALL_DIR)")
+  $(call Build/Compile/PyMod,,install --prefix=/usr --root="$(PKG_INSTALL_DIR)")
 endef
 
 define Package/python-paho-mqtt/install
