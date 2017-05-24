@@ -16,10 +16,11 @@ PKG_RELEASE:=1
 #PKG_SOURCE:=wiringpi-$(PKG_VERSION).tar.gz
 #PKG_SOURCE_URL:=https://pypi.python.org/packages/04/ab/0474d6775c2416a3523a8db5e017a44cb1f0fe8df0629cf469cb21675691/
 #PKG_MD5SUM:=da30ec2869b4f1974d85672c511b4b1a
+#PKG_BUILD_DIR:=$(BUILD_DIR)/wiringpi-$(PKG_VERSION)
 
+# added for build on local src
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
-#PKG_BUILD_DIR:=$(BUILD_DIR)/wiringpi-$(PKG_VERSION)
 PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
@@ -38,13 +39,14 @@ define Package/python-wiringpi2/description
   This package contains Python bindings for wiringpi2
 endef
 
+# added for build on local src
 define Build/Prepare
 	mkdir -p $(PKG_BUILD_DIR)
 	$(CP) ./src/* $(PKG_BUILD_DIR)/
 endef
 
 define Build/Compile
-        $(call Build/Compile/PyMod,,install --root="$(PKG_INSTALL_DIR)" --prefix="/usr")
+  $(call Build/Compile/PyMod,,install --root="$(PKG_INSTALL_DIR)" --prefix="/usr")
 endef
 
 define Package/python-wiringpi2/install
