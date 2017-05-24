@@ -91,6 +91,19 @@ MD5Sum: ab19828d3decc979ddedd5f2bc2a7e70
 SHA256sum: 30f76076cca22386b4acf488b4e49dcb463e9b11cc364ea316e3e9004e74f4f7
 Description:  Library of functions to control the PWM Expansion
 
+Package: paho-mqtt
+Version: 1.2.3-1
+Depends: libc, python
+Source: feeds/wiringPi/feeds/wiringPi/paho-mqtt
+Section: lang
+Architecture: brcm2708
+Installed-Size: 38837
+Filename: paho-mqtt_1.2.3-1_brcm2708.ipk
+Size: 39616
+MD5Sum: 9734f51808fb8935658a1806d4c1013e
+SHA256sum: 17333665579e5d6ff3ae35b339b6150ad6b9b94a771f5b202e5d17ca95d9394e
+Description:  This package contains Python bindings for mqtt
+
 Package: pyOledExp
 Version: 0.4-1
 Depends: libc, liboniondebug, libonioni2c, libonionoledexp, python-base, pyOmegaExpansion
@@ -142,6 +155,19 @@ Size: 2609
 MD5Sum: fea0479ddaae4cfa4d5c887918270fd4
 SHA256sum: 5bceb94fa92aad32ce5cb92d7268aed70f8ede397f6e7df762b7bfe5f68a8dfa
 Description:  Python module to control the Onion PWM Expansion
+
+Package: python-paho-mqtt
+Version: 1.2.3-1
+Depends: libc, python
+Source: feeds/wiringPi/feeds/wiringPi/python-paho-mqtt
+Section: lang
+Architecture: brcm2708
+Installed-Size: 38837
+Filename: python-paho-mqtt_1.2.3-1_brcm2708.ipk
+Size: 39613
+MD5Sum: ecea4717b9568928692174bd1b56bd43
+SHA256sum: 4b463895603197e94052f88163c81f31b2af7abcefa12abe7aca3adcec41c9ad
+Description:  This package contains Python bindings for mqtt
 
 Package: python-smbus
 Version: 2017-04-03-3.1.2+

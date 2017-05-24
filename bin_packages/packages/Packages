@@ -103,11 +103,11 @@ LicenseFiles: COPYING
 Section: libs
 Maintainer: Marcel Denia <naoir@gmx.net>
 Architecture: brcm2708
-Installed-Size: 16212
+Installed-Size: 16211
 Filename: libgdbm_1.11-1_brcm2708.ipk
-Size: 16965
-MD5Sum: f6741ebc1ec0a7598717bb08165416ae
-SHA256sum: e20f557ebc673f7372425da391574851668c8297fd8db7ec2db5a89116b47d0b
+Size: 16974
+MD5Sum: 0c0203102d1efe88e767c5efcaa53fb5
+SHA256sum: b7d105f793ed465cb7a32ee3ace73364936666e139f8b2895662512909ee0941
 Description:  GNU database manager library
  GNU dbm is a set of database routines that use extendible hashing and
  works similar to the standard UNIX dbm routines.
@@ -247,11 +247,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 716769
+Installed-Size: 716771
 Filename: python-base_2.7.13-5_brcm2708.ipk
-Size: 712089
-MD5Sum: 631edc26901795453250613c2fd4367e
-SHA256sum: 8b9e84c6c9c57a965645bb684d8aa568b87ae4384b61e130f1aaa985fd2b5d68
+Size: 712092
+MD5Sum: 518e04c309125cb70853c8b062473e01
+SHA256sum: 0eed425cd5a25f0b47cc357903f4878cccda2c1f7972f4a5f3b19d6ce589abd6
 Description:  This package contains only the interpreter and the bare minimum
  for the interpreter to start.
 
@@ -264,11 +264,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 696284
+Installed-Size: 696288
 Filename: python-codecs_2.7.13-5_brcm2708.ipk
-Size: 680696
-MD5Sum: 4dd5836b6a3a0e4cc7622b66089b2d7b
-SHA256sum: 9487a50854580276d9f4d85efb449de82c0d495c272df7d19ddd290d83b8b054
+Size: 680655
+MD5Sum: 014614ed6b76399b3e7f54d72e2966f9
+SHA256sum: 4bd4391f2ed5fff4808a57a8add9c8e377d742f7a69bc76737480815ce86af34
 Description:  Python 2.7 codecs + unicode support
 
 Package: python-compiler
@@ -280,11 +280,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 59768
+Installed-Size: 59769
 Filename: python-compiler_2.7.13-5_brcm2708.ipk
-Size: 60691
-MD5Sum: b81c7ac3e82cd3cdf0a385d85881e43a
-SHA256sum: f6a0f91b8e5f1042ad717d45f0b553cf9ddba18a433c5c6f3a8e1e695a4f1b21
+Size: 60683
+MD5Sum: 0a7bc795e66fa15cd0e007c7f157fc9a
+SHA256sum: 777e4435ccd155356abb33d6929fa9f86b14962a0f4d53a0da76cdbd01df3da4
 Description:  Python 2.7 compiler module
 
 Package: python-ctypes
@@ -298,9 +298,9 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
 Installed-Size: 59909
 Filename: python-ctypes_2.7.13-5_brcm2708.ipk
-Size: 60632
-MD5Sum: 16b09bfdeb10f31327da82d4bf7a0bae
-SHA256sum: 244319990fdef8116c046ae09c46f0a088e352828209a4965ce69138787345c3
+Size: 60638
+MD5Sum: e9f5863ace1a0c6a3737884b3320bb62
+SHA256sum: e7763aeda76d45f480cb18ad0e74100a441e426ec0716e1de84bd88190a28218
 Description:  Python 2.7 ctypes module
 
 Package: python-db
@@ -312,11 +312,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 72436
+Installed-Size: 72435
 Filename: python-db_2.7.13-5_brcm2708.ipk
-Size: 72745
-MD5Sum: 1de497af5a6b227659c3192de3451a24
-SHA256sum: e33dbc2de7a575c40be6f5038b29e26314cbde89f2500520f275889d7e9ba83d
+Size: 72742
+MD5Sum: 6ec4eb0621a0b826a2d8e4009694076d
+SHA256sum: c1072616b01fa5e573382817af401a94e8eb348cb5505c668430c7951e1b466b
 Description:  Python 2.7 db module
 
 Package: python-decimal
@@ -330,9 +330,9 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
 Installed-Size: 48953
 Filename: python-decimal_2.7.13-5_brcm2708.ipk
-Size: 49807
-MD5Sum: aeb4d9082087869ef66e356c5cc90a3c
-SHA256sum: 07fc08adc2a83f182f64868a94c867c68364b3a3c4252ef944009744f33b5783
+Size: 49817
+MD5Sum: 42baba335f2ed9638aca69097bb458de
+SHA256sum: 0b9407f3ed3096504f64cee2f2a738eff1e6895fcf4e9fedf5033c9d6521e1b9
 Description:  Python 2.7 decimal module
 
 Package: python-dev
@@ -344,11 +344,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 1758356
+Installed-Size: 1758355
 Filename: python-dev_2.7.13-5_brcm2708.ipk
-Size: 1755840
-MD5Sum: c4d6051bfa792386540989228cda4772
-SHA256sum: 029343f6306bf5da420c7c52e9087bec0aadf52a7d286a0c1511189bbc605a7d
+Size: 1755802
+MD5Sum: e19aa18cdd2c4fa7ce44e6ac4f34f5e8
+SHA256sum: d806320c50479a4fb8a56bef6dcb8af5270d85be2c8cd384e33431c81d04ca6b
 Description:  Python 2.7 development files
 
 Package: python-distutils
@@ -360,11 +360,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 174573
+Installed-Size: 174570
 Filename: python-distutils_2.7.13-5_brcm2708.ipk
-Size: 175501
-MD5Sum: c05b8b46b29240310b45de589b536a4b
-SHA256sum: 63d61ef57876b58d33d43c81c701c47c2c7e30769b561b5541174a2dfaeb205f
+Size: 175489
+MD5Sum: 66a02f99d29129118c6941bc402394c4
+SHA256sum: 9fb9253b6c622a7dad18a228f62e12ab3056743789dfda313bbf148234f8bfae
 Description:  Python 2.7 distutils
 
 Package: python-email
@@ -376,11 +376,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 50216
+Installed-Size: 50217
 Filename: python-email_2.7.13-5_brcm2708.ipk
-Size: 51125
-MD5Sum: dcf0c8c18d3fc748737df02c0dd8954f
-SHA256sum: c499657e098616c179ddaceb8077805e594dbb6272a39c7a9a28f3eca9e8aa8c
+Size: 51122
+MD5Sum: 68b252cf7d0be934310c17f82114bd09
+SHA256sum: 8908f621494cca7723a4e332820763b63b6a9806e06c4c2f07be9a2fd8c8733e
 Description:  Python 2.7 email module
 
 Package: python-gdbm
@@ -410,9 +410,9 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
 Installed-Size: 102834
 Filename: python-lib2to3_2.7.13-5_brcm2708.ipk
-Size: 103727
-MD5Sum: 420ebf406ac87f1534c93ac17a3ad9c2
-SHA256sum: 6602819db1b9d456e0839b5584edaeb2742cf26660525100cbf388de41211ded
+Size: 103725
+MD5Sum: 71f054e75f348b3994c91f76a8b21137
+SHA256sum: a37a59340864073cec11d48d47f40f830ee01793af41fee3b4389d5b532a2311
 Description:  Python 2.7 lib2to3 module
 
 Package: python-light
@@ -424,11 +424,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 1421781
+Installed-Size: 1421784
 Filename: python-light_2.7.13-5_brcm2708.ipk
-Size: 1421674
-MD5Sum: fbd9f8c22cbc2e05bc073c34c934a541
-SHA256sum: 5fdbf144a313e206cf5909c95a1ec0c057c7db8d37deafe31e42755e4665dc8e
+Size: 1421653
+MD5Sum: 7dcda1630efae8b85cfa41671008bdc3
+SHA256sum: 1bdb1bd4a88bf56fac6878e76c1c52a6d3aab26b28becbb05a78281fc6c5f8c8
 Description:  This package is essentially the python-base package plus
  a few of the rarely used (and big) libraries stripped out
  into separate packages.
@@ -442,11 +442,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 42501
+Installed-Size: 42502
 Filename: python-logging_2.7.13-5_brcm2708.ipk
-Size: 43373
-MD5Sum: eed448cb01f6a2984982e87b4a7bad3b
-SHA256sum: 7020a095c2a0101f88ca057934501b73cb42b7fcb323b5269f4c015c0a86feb4
+Size: 43378
+MD5Sum: f4dd79f407cba307e155f970650df053
+SHA256sum: a3f73bee602b07bd45946b53be72440e87cb631bb4752c18c6daf476c2585d2c
 Description:  Python 2.7 logging module
 
 Package: python-multiprocessing
@@ -458,11 +458,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 64600
+Installed-Size: 64597
 Filename: python-multiprocessing_2.7.13-5_brcm2708.ipk
-Size: 65382
-MD5Sum: 9d44d4cc7fe603e9d734e833eaa28589
-SHA256sum: 390d95e14ace0c57b9195807e0a8d1dc00251ab9689cd3aeac67be753832057f
+Size: 65375
+MD5Sum: 40e3631af8d2fa3f0b9413f1c68c45b5
+SHA256sum: cb88c9665eb0c847478be9f71d71a1fa7bfa148b9f08b726ce08cf59a563de84
 Description:  Python 2.7 multiprocessing
 
 Package: python-ncurses
@@ -474,11 +474,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 31188
+Installed-Size: 31189
 Filename: python-ncurses_2.7.13-5_brcm2708.ipk
-Size: 31812
-MD5Sum: 97c9ff1bc3b3a890b83193a10b6e38d7
-SHA256sum: 09513688db41db89206224000bdaf41673ae309fa40951db1005e271a5a34faa
+Size: 31808
+MD5Sum: 68c7c75581a70671676cba4d8d125785
+SHA256sum: bfb38f1d827e4c432b2042c9961feb52909e35e3c8dbada1c24b02bdc789dfb5
 Description:  Python 2.7 ncurses module
 
 Package: python-openssl
@@ -522,11 +522,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 1399216
+Installed-Size: 1399215
 Filename: python-pip_9.0.1_brcm2708.ipk
-Size: 1379206
-MD5Sum: e5c7db486ef332d2e20190f4813249eb
-SHA256sum: 3fce60471c0b4c0f2fcadc3bf2fceb22ced4641ea2fef8fae989fde02f7c2895
+Size: 1378490
+MD5Sum: 28c9d8e32496f87412fe17b83b6e17be
+SHA256sum: ba6e00b4e90c98af5a602c87633e6fa77d47d56cd0ed28070632ed1bbffd182e
 Description:  Python 2.7 pip module
 
 Package: python-pydoc
@@ -538,11 +538,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 180368
+Installed-Size: 180369
 Filename: python-pydoc_2.7.13-5_brcm2708.ipk
-Size: 180946
-MD5Sum: 830fa992956dc3639532c49eef7a4436
-SHA256sum: 8ef92b5348a99f19c3dd30b4a166ff766464de8de7c071a946492664cb3ee9df
+Size: 180950
+MD5Sum: bff8b199d267739732e31198bf089d9f
+SHA256sum: c623a49b2c5f7433c4358d8c849e2aeeb92d9e5b4c56ef3ec9533ab1d6700b92
 Description:  Python 2.7 pydoc module
 
 Package: python-setuptools
@@ -554,11 +554,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 513878
+Installed-Size: 513872
 Filename: python-setuptools_28.8.0_brcm2708.ipk
 Size: 514814
-MD5Sum: 13810ab028b6baff663884e2f6a85899
-SHA256sum: 089443affe30d2f3507d738fd83e5f49d8b526e912da6dcacfdfe9d31b1e1405
+MD5Sum: 289868185ff8f8efea2dbefe5b31a181
+SHA256sum: 81209ff95bd5b5b9fae9c692304ad2213462e12ef54a9afa802060b0d8fc4616
 Description:  Python 2.7 setuptools module
 
 Package: python-sqlite3
@@ -573,8 +573,8 @@ Architecture: brcm2708
 Installed-Size: 26220
 Filename: python-sqlite3_2.7.13-5_brcm2708.ipk
 Size: 26768
-MD5Sum: d68c318e2792040128174d892e545257
-SHA256sum: b54410996e4138d2627d2f84010d600cb19a54d40cf2f758e95f4a35dfc1b241
+MD5Sum: 90b8076f2d1d03afa4d9bda064e42972
+SHA256sum: 0a79d7a5b4bb3b1bed4797781b6182a206d25456e6bac3fc0f1cd2a5f16aa608
 Description:  Python 2.7 sqlite3 module
 
 Package: python-unittest
@@ -588,9 +588,9 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
 Installed-Size: 33385
 Filename: python-unittest_2.7.13-5_brcm2708.ipk
-Size: 34257
-MD5Sum: 42cad7953ebff18d056429052ae608aa
-SHA256sum: 8bbc2923695849465d2d64e38e380be989ad4d37b1b15aa43c1b3c3a5009efd4
+Size: 34256
+MD5Sum: 6e93bde607c93c0740a5bc96066ba4da
+SHA256sum: 5b04c43ee44f568fba1e073cff0f020d2d3d6363542832d66a3aa509d2a37faa
 Description:  Python 2.7 unittest module
 
 Package: python-xml
@@ -602,11 +602,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 170993
+Installed-Size: 170990
 Filename: python-xml_2.7.13-5_brcm2708.ipk
-Size: 171779
-MD5Sum: c64da1b8ed7cc52c4b0c451e285f0454
-SHA256sum: 075c2195a04f42fd554de7ada8607a84472ac2ca7fee94036e64072b487dbfc3
+Size: 171771
+MD5Sum: e8dbd176039c646609e555807aa51fde
+SHA256sum: 4f30e9319eaaf5ffebfd48d194b32cb6e32544289ec755608310734593cd76d5
 Description:  Python 2.7 xml libs
 
 Package: python
