@@ -13,13 +13,13 @@ PKG_NAME:=python-paho-mqtt
 PKG_VERSION:=1.2.3
 PKG_RELEASE:=1
 
-#PKG_SOURCE:=paho-mqtt-$(PKG_VERSION).tar.gz
-#PKG_SOURCE_URL:=https://pypi.python.org/packages/ce/27/28ac0859fb8d63754ec51659be265bf3b89d1568c5f6736d21026e11ea85/
-#PKG_MD5SUM:=4bd192ea24e7aa347f6d240101ef82f6
-#PKG_BUILD_DIR:=$(BUILD_DIR)/paho-mqtt-$(PKG_VERSION)
+PKG_SOURCE:=paho-mqtt-$(PKG_VERSION).tar.gz
+PKG_SOURCE_URL:=https://pypi.python.org/packages/ce/27/28ac0859fb8d63754ec51659be265bf3b89d1568c5f6736d21026e11ea85/
+PKG_MD5SUM:=4bd192ea24e7aa347f6d240101ef82f6
+PKG_BUILD_DIR:=$(BUILD_DIR)/paho-mqtt-$(PKG_VERSION)
 
 # added for build on local src
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
+#PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_BUILD_DEPENDS:=python
 
@@ -27,23 +27,23 @@ include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
 
 define Package/python-paho-mqtt
-  SUBMENU:=Python
-  SECTION:=lang
-  CATEGORY:=Languages
-  TITLE:=python-paho-mqtt
-  #URL:=
-  DEPENDS:=+python
+ SUBMENU:=Python
+ SECTION:=lang
+ CATEGORY:=Languages
+ TITLE:=python-paho-mqtt
+ #URL:=
+ DEPENDS:=+python
 endef
 
 define Package/python-paho-mqtt/description
-  This package contains Python bindings for mqtt
+ This package contains Python bindings for mqtt
 endef
 
 # added for build on local src
-define Build/Prepare
-	mkdir -p $(PKG_BUILD_DIR)
-	$(CP) ./src/* $(PKG_BUILD_DIR)/
-endef
+#define Build/Prepare
+#	mkdir -p $(PKG_BUILD_DIR)
+#	$(CP) ./src/* $(PKG_BUILD_DIR)/
+#endef
 
 define Build/Compile
   $(call Build/Compile/PyMod,,install --root="$(PKG_INSTALL_DIR)" --prefix="/usr")
