@@ -32,7 +32,7 @@ define Package/paho_mqtt
  CATEGORY:=Languages
  TITLE:=paho_mqtt
  #URL:=
- DEPENDS:=+python
+ DEPENDS:=+python +python-dev +python-setuptools
 endef
 
 define Package/paho_mqtt/description
