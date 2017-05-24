@@ -32,11 +32,11 @@ define Package/python-paho-mqtt
   CATEGORY:=Languages
   TITLE:=python-paho-mqtt
   #URL:=
-  DEPENDS:=+python-light
+  DEPENDS:=+python
 endef
 
 define Package/python-paho-mqtt/description
-  MQTT version 3.1.1 client class
+  This package contains Python bindings for mqtt
 endef
 
 # added for build on local src
@@ -46,7 +46,7 @@ define Build/Prepare
 endef
 
 define Build/Compile
-  $(call Build/Compile/PyMod,,install --prefix=/usr --root="$(PKG_INSTALL_DIR)")
+  $(call Build/Compile/PyMod,,install --root="$(PKG_INSTALL_DIR)" --prefix="/usr")
 endef
 
 define Package/python-paho-mqtt/install
@@ -57,4 +57,3 @@ define Package/python-paho-mqtt/install
 endef
 
 $(eval $(call BuildPackage,python-paho-mqtt))
-
