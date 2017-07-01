@@ -27,14 +27,20 @@ from [23.05.2017](https://pypi.python.org/pypi/wiringpi)
 ## How To:
 
 #### Update feeds.conf in root Directory, add:
+```
 src-git wiringPi https://github.com/nmaas87/rpi-openwrt-packages.git
+```
 
 #### Update feeds:
+```
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+```
 
 #### Make Menu:
+```
 make menuconfig
+```
 
 #### Choose Packages:
 
@@ -76,4 +82,4 @@ Use wiringPi files with i.e.
 ```
 src/gz wiringPi https://nmaas87.github.io/rpi-openwrt-packages/bin_packages/wiringPi
 ```
-in /etc/customfeeds.conf
+in /etc/opkg/customfeeds.conf
