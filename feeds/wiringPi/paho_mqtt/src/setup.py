@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import sys
 from setuptools import setup, find_packages
 
-import sys
 sys.path.insert(0, 'src')
 from paho.mqtt import __version__
 
@@ -11,7 +11,11 @@ with open('README.rst', 'rb') as readme_file:
     readme = readme_file.read().decode('utf-8')
 
 requirements = []
-test_requirements = []
+test_requirements = ['pytest', 'pylama']
+setup_requirements = ['pytest-runner']
+
+if sys.version_info < (3, 0):
+    test_requirements += ['mock']
 
 setup(
     name='paho-mqtt',
@@ -38,11 +42,8 @@ setup(
         'Natural Language :: English',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
@@ -50,5 +51,6 @@ setup(
         'Topic :: Internet',
     ],
     test_suite='tests',
-    tests_require=test_requirements
+    tests_require=test_requirements,
+    setup_requires=setup_requirements
 )

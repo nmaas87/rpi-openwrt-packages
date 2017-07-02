@@ -1,0 +1,143 @@
+v1.3.0 - 2017-06-20
+===================
+
+- **BREAKING** Requires Python 2.7 or 3.4+. Closes #163.
+- **BREAKING** Remove support for SSL without SSLContext (Requires Python 2.7.9+ or 3.2+).
+  Closes #115.
+- **BREAKING** on_connect callback is now always called flags. Previously this
+  callback could accepts 3 OR 4 arguments, now it must accepts 4. Closes #197.
+- **BREAKING** tls_insecure_set() must now be called *after* tls_set()
+- Allow username and password to be zero length (as opposed to not being
+  present). Closes #80.
+- Allow zero length client ids when using MQTT v3.1.1.
+- Add SSLContext support, including SNI. Closes #11.
+- Improved support for unicode topic and binary payload.
+  Closes #15, #16.
+- Allow arbitrary Websocket headers and path.
+  Closes #169.
+- Fix issue with large inbound payload over Websocket. Closes #107.
+- Add exponential delay for reconnection. Closes #195.
+- Move unit tests to pytest (#164) and tox (#187)
+- Add support for standard Python logging. Closes #95.
+- Fix duplicate incoming QoS==2 message. Closes #194.
+
+v1.2.3 - 2017-04-20
+===================
+
+- Fix possible hang of TLS connection during handshake.
+  Closes #3.
+- Fix issue with publish helper with TLS connection.
+  Closes #180.
+- Fix installation issue on non-UTF-8 system.
+  Closes #181.
+- Fix non-working Websocket over TLS connection.
+  Closes #182.
+
+v1.2.2 - 2017-04-11
+===================
+
+- Fix message lost when using paho.mqtt.publish helper with QoS=0 message.
+  Closes #172.
+
+v1.2.1 - 2017-04-03
+===================
+
+- Handle unicode username and passwords correctly. Closes #79.
+- Fix handling of invalid UTF-8 topics on incoming messages - the library now
+  does not attempt to decode the topic - this will happen when the user
+  accesses msg.topic in the on_message callback. If the topic is not valid
+  UTF-8, an exception will be raised. Closes #75.
+- Fix issue with WebSocket connection in case of network issue (timeout or
+  connection broken). Closes #105.
+- Fix issue with SSL connection, where latest incoming message may be delayed
+  or never processed. Closes #131.
+- Fix possible message lost with publish.single and publish.multiple. Closes
+  #119.
+
+
+v1.2 - 2016-06-03
+=================
+
+- Client.publish() now returns an MQTTMessageInfo object. The MQTTMessageInfo
+  object behaves like a tuple of (rc, mid) for backwards compatibility but
+  also provides two functions: is_published() and wait_for_published().
+  This allows a client to determine whether any given message has been
+  published without need for a callback, and also allows the client to block
+  waiting until the message has been sent.
+- Further fix for Client constructor for the case where "localhost" is
+  unresolvable.
+- Add paho.mqtt.subscribe module, with simple() and callback() helper
+  functions.
+- Allow ^C to interrupt client loop.
+- Fix for keepalive=0 causing an infinite disconnect/reconnect loop. Closes
+  #42.
+- Modify callbacks definition/structure to allow classical inheritence. Closes
+  #53, #54.
+- Add websockets support.
+- Default MQTT version is again changed to v3.1.1.
+- Client.subscribe() now accepts unicode type topic inputs on Python 2. Closes
+  #16.
+- paho.mqtt.publish() now raises an MQTTException on a CONNECT failure, rather
+  than blindly continuing. Closes #6.
+- Don't block on TLS sockets on Python 3. Closes #2.
+- Client.publish() now accepts bytes() payloads on Python 3. Closes #1.
+- Don't attempt to join() own thread. Closes #14.
+- Allow the use of Client.message_callback_add() from inside callbacks. Closes
+  #12.
+- Use a monotonic time source for keeping track of time, if available. Closes
+  #56.
+
+
+v1.1 - 2015-01-30
+=================
+
+- Add support for wildcard certificates. Closes #440547.
+- Default connection behaviour has been reverted to MQTT v3.1 instead of
+  v3.1.1. There is as yet insufficient support for v3.1.1 to rely on, and
+  current v3.1 implementations do not return the correct CONNACK code to allow
+  detection of the fault. Closes #451735.
+- Fix incorrect handling of queued messages after reconnecting. Closes
+  #452672.
+- Fix possible race condition if the connection in loop_start() does not
+  complete before loop_stop() is called, meaning the network thread never
+  ends. Closes #448428. Thanks to Kees Bakker.
+
+
+v1.0.2 - 2014-09-13
+===================
+
+- Fix "protocol" not being used in publish.single()
+- Fix Client constructor for the case where "localhost" is unresolvable.
+  Closes #439277.
+- Don't attempt to encode topic to utf-8 twice. Thanks to Luc Milland.
+- Handle "unicode" type payloads on Python 2.7. Thanks to Luc Milland.
+- Fix reconnecting after sending more QoS>0 messages than inflight messages is
+  set to, whilst connecting.  Closes #443935. Thanks to Hiram van Paassen.
+- Fix possible race condition when connecting with TLS and publishing at the
+  same time, which could lead to PUBLISH data being sent before any other
+  messages and unencrypted. Closes #443964. Thanks to Hiram van Paassen.
+- Handle exceptions from select() in client loop() function. Closes #443881.
+  Thanks to Jeff Jasper.
+
+
+v1.0.1
+======
+
+- Fix incorrect reconnect that occurred if calling loop_stop() before
+  disconnect().
+
+v1.0
+====
+
+- Default protocol is now MQTT v3.1.1.
+- Client will reconnect using MQTT v3.1 if a v3.1.1 connection fails due to
+  the incorrect protocol version number.
+- All strings are now correctly encoded as utf-8.
+- Add support for "session present" flag in on_connect callback.
+
+v0.9.1
+======
+
+- Fix CONNECT packet for MQTT v3.1.1.
+- Fix potential lockup when publishing from on_publish callback.
+- Add version information to paho.mqtt.__version__

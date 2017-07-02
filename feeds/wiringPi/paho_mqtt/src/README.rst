@@ -5,7 +5,7 @@ This document describes the source code for the `Eclipse Paho <http://eclipse.or
 
 This code provides a client class which enable applications to connect to an `MQTT <http://mqtt.org/>`_ broker to publish messages, and to subscribe to topics and receive published messages. It also provides some helper functions to make publishing one off messages to an MQTT server very straightforward.
 
-It supports Python 2.7 or 3.x, with limited support for Python 2.6.
+It supports Python 2.7.9+ or 3.4+, with limited support for Python 2.7 before 2.7.9.
 
 The MQTT protocol is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. Designed as an extremely lightweight publish/subscribe messaging transport, it is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium.
 
@@ -227,18 +227,36 @@ Set the time in seconds before a message with QoS>0 is retried, if the broker do
 
 This is set to 5 seconds by default and should not normally need changing.
 
+ws_set_options()
+''''''''''''''''
+
+::
+
+    ws_set_options(self, path="/mqtt", headers=None)
+
+Set websocket connection options. These options will only be used if ``transport="websockets"`` was passed into the ``Client()`` constructor.
+
+path
+    The mqtt path to use on the broker.
+
+headers
+    Either a dictionary specifying a list of extra headers which should be appended to the standard websocket headers, or a callable that takes the normal websocket headers and returns a new dictionary with a set of headers to connect to the broker.
+
+Must be called before ``connect*()``. An example of how this can be used with the AWS IoT platform is in the **examples** folder.
+
+
 tls_set()
 '''''''''
 
 ::
 
-    tls_set(ca_certs, certfile=None, keyfile=None, cert_reqs=ssl.CERT_REQUIRED,
-        tls_version=ssl.PROTOCOL_TLSv1, ciphers=None)
+    tls_set(ca_certs=None, certfile=None, keyfile=None, cert_reqs=ssl.CERT_REQUIRED,
+        tls_version=ssl.PROTOCOL_TLS, ciphers=None)
 
 Configure network encryption and authentication options. Enables SSL/TLS support.
 
 ca_certs
-    a string path to the Certificate Authority certificate files that are to be treated as trusted by this client. If this is the only option given then the client will operate in a similar manner to a web browser. That is to say it will require the broker to have a certificate signed by the Certificate Authorities in ``ca_certs`` and will communicate using TLS v1, but will not attempt any form of authentication. This provides basic network encryption but may not be sufficient depending on how the broker is configured.
+    a string path to the Certificate Authority certificate files that are to be treated as trusted by this client. If this is the only option given then the client will operate in a similar manner to a web browser. That is to say it will require the broker to have a certificate signed by the Certificate Authorities in ``ca_certs`` and will communicate using TLS v1, but will not attempt any form of authentication. This provides basic network encryption but may not be sufficient depending on how the broker is configured. By default, on Python 2.7.9+ or 3.4+, the default certification authority of the system is used. On older Python version this parameter is mandatory.
 
 certfile, keyfile
     strings pointing to the PEM encoded client certificate and private keys respectively. If these arguments are not ``None`` then they will be used as client information for TLS based authentication. Support for this feature is broker dependent. Note that if either of these files in encrypted and needs a password to decrypt it, Python will ask for the password at the command line. It is not currently possible to define a callback to provide the password.
@@ -247,10 +265,26 @@ cert_reqs
     defines the certificate requirements that the client imposes on the broker. By default this is ``ssl.CERT_REQUIRED``, which means that the broker must provide a certificate. See the ssl pydoc for more information on this parameter.
 
 tls_version
-    specifies the version of the SSL/TLS protocol to be used. By default TLS v1 is used. Previous versions (all versions beginning with SSL) are possible but not recommended due to possible security problems.
+    specifies the version of the SSL/TLS protocol to be used. By default (if the python version supports it) the highest TLS version is detected. If unavailable, TLS v1 is used. Previous versions (all versions beginning with SSL) are possible but not recommended due to possible security problems.
 
 ciphers
     a string specifying which encryption ciphers are allowable for this connection, or ``None`` to use the defaults. See the ssl pydoc for more information.
+
+Must be called before ``connect*()``.
+
+tls_set_context()
+'''''''''''''''''
+
+::
+
+    tls_set_context(context=None)
+
+Configure network encryption and authentication context. Enables SSL/TLS support.
+
+context
+    an ssl.SSLContext object. By default, this is given by ``ssl.create_default_context()``, if available (added in Python 3.4).
+
+If you're unsure about using this method, then either use the default context, or use the ``tls_set`` method. See the ssl module documentation section about `security considerations <https://docs.python.org/3/library/ssl.html#ssl-security>`_ for more information.
 
 Must be called before ``connect*()``.
 
@@ -260,14 +294,46 @@ tls_insecure_set()
 ::
 
     tls_insecure_set(value)
-    
+
 Configure verification of the server hostname in the server certificate.
 
 If ``value`` is set to ``True``, it is impossible to guarantee that the host you are connecting to is not impersonating your server. This can be useful in initial server testing, but makes it possible for a malicious third party to impersonate your server through DNS spoofing, for example.
 
 Do not use this function in a real system. Setting value to True means there is no point using encryption.
 
-Must be called before ``connect*)``.
+Must be called before ``connect*()`` and after ``tls_set()`` or ``tls_set_context()``.
+
+enable_logger()
+'''''''''''''''
+
+::
+
+    enable_logger(logger=None)
+
+Enable logging using the standard python logging package (See PEP 282). This may be used at the same time as the ``on_log`` callback method.
+
+If ``logger`` is specified, then that ``logging.Logger`` object will be used, otherwise one will be created automatically.
+
+Paho logging levels are converted to standard ones according to the following mapping:
+
+====================  ===============
+Paho                  logging
+====================  ===============
+``MQTT_LOG_ERR``      ``logging.ERROR``
+``MQTT_LOG_WARNING``  ``logging.WARNING``
+``MQTT_LOG_NOTICE``   ``logging.INFO`` *(no direct equivalent)*
+``MQTT_LOG_INFO``     ``logging.INFO``
+``MQTT_LOG_DEBUG``    ``logging.DEBUG``
+====================  ===============
+
+disable_logger()
+''''''''''''''''
+
+::
+
+    disable_logger()
+
+Disable logging using standard python logging package. This has no effect on the ``on_log`` callback.
 
 username_pw_set()
 '''''''''''''''''
@@ -317,6 +383,23 @@ retain
 Raises a ``ValueError`` if ``qos`` is not 0, 1 or 2, or if ``topic`` is
 ``None`` or has zero string length.
 
+reconnect_delay_set
+'''''''''''''''''''
+
+::
+
+    reconnect_delay_set(min_delay=1, max_delay=120)
+
+The client will automatically retry connection. Between each attempt
+it will wait a number of seconds between ``min_delay`` and ``max_delay``.
+
+When the connection is lost, initially the reconnection attempt is delayed of
+``min_delay`` seconds. It's doubled between subsequent attempt up to ``max_delay``.
+
+The delay is reset to ``min_delay`` when the connection complete (e.g. the CONNACK is
+received, not just the TCP connection is established).
+
+
 Connect / reconnect / disconnect
 ````````````````````````````````
 
@@ -336,7 +419,7 @@ host
 port
     the network port of the server host to connect to. Defaults to 1883. Note
     that the default port for MQTT over SSL/TLS is 8883 so if you are using
-    ``tls_set()`` the port may need providing manually
+    ``tls_set()`` or ``tls_set_context()``, the port may need providing manually
 
 keepalive
     maximum period in seconds allowed between communications with the broker.
@@ -867,6 +950,9 @@ Called when the client has log information. Define to allow debugging. The
 ``level`` variable gives the severity of the message and will be one of
 ``MQTT_LOG_INFO``, ``MQTT_LOG_NOTICE``, ``MQTT_LOG_WARNING``, ``MQTT_LOG_ERR``,
 and ``MQTT_LOG_DEBUG``. The message itself is in ``buf``. 
+
+This may be used at the same time as the standard Python logging, which can be
+enabled via the ``enable_logger`` method.
 
 External event loop support
 ```````````````````````````
