@@ -9,7 +9,7 @@ Thanks a lot to the AtomEmbedded Machine Learning Products Team :)!
 Updated from 2.21 ([10.10.2014](https://git.drogon.net/?p=wiringPi;a=commit;h=0a9fdeb29d31609ef834f050bdb8a7a65cd35e2b)) to 2.44 ([03.03.2017](https://git.drogon.net/?p=wiringPi;a=commit;h=96344ff7125182989f98d3be8d111952a8f74e15))
 
 ### i2c-tools
-Updated from 3.10 ([07.07.2015](https://github.com/groeck/i2c-tools/commit/9726bed900c1e4a46b2c024a43dec987215570be)) to 3.12 ([03.04.2017](https://github.com/groeck/i2c-tools/commit/fe13737567e7733d8cbe587a08ccb7af5ff8ee8e))
+Updated from 3.10 ([07.07.2015](https://github.com/groeck/i2c-tools/commit/9726bed900c1e4a46b2c024a43dec987215570be)) to 3.12 ([03.04.2017](https://github.com/groeck/i2c-tools/commit/fe13737567e7733d8cbe587a08ccb7af5ff8ee8e)) to 3.12 ([03.07.2017](https://git.kernel.org/pub/scm/utils/i2c-tools/i2c-tools.git/commit/?id=cb5ad58d3c25700c9d4d588ae354c8dadada37bb))
 
 ### Onion Omega 2 i2c-exp-driver
 Fetched on [22.05.2017](https://github.com/OnionIoT/OpenWRT-Packages/commit/6ef97880bf5a33936a6c73e3b0c249319b4cc648)
