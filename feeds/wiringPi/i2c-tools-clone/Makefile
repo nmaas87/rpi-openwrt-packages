@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=i2c-tools
-PKG_VERSION:=2017-04-03
+PKG_VERSION:=2017-04-07
 PKG_RELEASE:=3.1.2+
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/groeck/i2c-tools
-PKG_SOURCE_VERSION:=fe13737567e7733d8cbe587a08ccb7af5ff8ee8e
+PKG_SOURCE_URL:=https://git.kernel.org/pub/scm/utils/i2c-tools/i2c-tools.git/
+PKG_SOURCE_VERSION:=cb5ad58d3c25700c9d4d588ae354c8dadada37bb
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
