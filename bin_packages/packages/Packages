@@ -1,22 +1,3 @@
-Package: libcares
-Version: 1.12.0-1
-Depends: libc
-Source: feeds/packages/libs/c-ares
-License: MIT
-Section: libs
-Maintainer: Karl Palsson <karlp@etactica.com>
-Architecture: brcm2708
-Installed-Size: 29075
-Filename: libcares_1.12.0-1_brcm2708.ipk
-Size: 29873
-MD5Sum: fda7697f50cee7cc229566599284ce89
-SHA256sum: 14c8a7c07e0ae871c628f8781a252600625c41c328f0367b339b8d159a1b1b98
-Description:  c-ares is a C library for asynchronous DNS requests (including name resolves)
- 
- C89 compatibility, MIT licensed, builds for and runs on POSIX, Windows,
- Netware, Android and many more operating systems.
- 
-
 Package: libdb47
 Version: 4.7.25.4.NC-5
 Depends: libc, libxml2
@@ -27,11 +8,11 @@ LicenseFiles: LICENSE
 Section: libs
 Maintainer: Marcel Denia <naoir@gmx.net>
 Architecture: brcm2708
-Installed-Size: 501297
+Installed-Size: 501295
 Filename: libdb47_4.7.25.4.NC-5_brcm2708.ipk
-Size: 499173
-MD5Sum: d28464b9cfd3d9b602b2a070e38f3fce
-SHA256sum: 0fdbdf97721a5868242431ef7aa8e5ffff05f672ce429ea9cf9712890e5a3e18
+Size: 499057
+MD5Sum: 443b3d162d7ce4e05d31af7e87cf864a
+SHA256sum: c283246efab136a764dde811372982c85141fad8fabd99fa9669b6abefd42c7e
 Description:  Berkeley DB library (4.7).
 
 Package: libexpat
@@ -43,11 +24,11 @@ LicenseFiles: COPYING
 Section: libs
 Maintainer: Steven Barth <cyrus@openwrt.org>
 Architecture: brcm2708
-Installed-Size: 45521
+Installed-Size: 45520
 Filename: libexpat_2.2.0-1_brcm2708.ipk
-Size: 46142
-MD5Sum: 49c63d3fdd62966799783e8bdd421b3f
-SHA256sum: 544c33ca58f759d5faf193c8cd1ea08024acb6b0eca8e17738af3a79431c3799
+Size: 46113
+MD5Sum: 0b8357f73fbbd7ac8730e6599adc1110
+SHA256sum: 698f05feae8a68885883f4d68de2a1b1bf819901ffd98a1369c3471cb4e7e94d
 Description:  A fast, non-validating, stream-oriented XML parsing library.
 
 Package: libffi
@@ -59,11 +40,11 @@ LicenseFiles: LICENSE
 Section: libs
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: brcm2708
-Installed-Size: 5584
+Installed-Size: 5581
 Filename: libffi_3.2.1-2_brcm2708.ipk
-Size: 6600
-MD5Sum: 93f054a153363f3543bae90b38e8e294
-SHA256sum: 2a27f036dd2bac24a7dd148b227bbbb6a82fcc0bd84eb7521b044ba87fd740e4
+Size: 6591
+MD5Sum: 0d59400e26615e4614f05f8225b9b758
+SHA256sum: 4a722d46043fe1414045c900403951728c78f231370ee97b8a71d2b68e104125
 Description:  The libffi library provides a portable, high level programming interface to
  various calling conventions. This allows a programmer to call any function
  specified by a call interface description at run-time.
@@ -75,25 +56,6 @@ Description:  The libffi library provides a portable, high level programming int
  A layer must exist above libffi that handles type conversions for values passed
  between the two languages.
 
-Package: libfreetype
-Version: 2.7.1-1
-Depends: libc, zlib, libbz2
-Source: feeds/packages/libs/freetype
-License: FTL GPL-2.0 MIT ZLIB
-LicenseFiles: docs/LICENSE.TXT docs/FTL.TXT docs/GPLv2.TXT src/bdf/README src/pcf/README src/gzip/zlib.h
-Section: libs
-Maintainer: Nicolas Thill <nico@openwrt.org>
-Architecture: brcm2708
-Installed-Size: 257555
-Filename: libfreetype_2.7.1-1_brcm2708.ipk
-Size: 257954
-MD5Sum: 4842743c1743d0f2f41caea9e50fac5a
-SHA256sum: 63af67d1f5930e97d20c74368a07fe84040e52bf58d026b6e1a1565e1e5bb940
-Description:  The FreeType project is a team of volunteers who develop free,
- portable and high-quality software solutions for digital typography.
- They specifically target embedded systems and focus on bringing small,
- efficient and ubiquitous products.
-
 Package: libgdbm
 Version: 1.11-1
 Depends: libc
@@ -103,88 +65,32 @@ LicenseFiles: COPYING
 Section: libs
 Maintainer: Marcel Denia <naoir@gmx.net>
 Architecture: brcm2708
-Installed-Size: 16211
+Installed-Size: 16210
 Filename: libgdbm_1.11-1_brcm2708.ipk
-Size: 16974
-MD5Sum: 0c0203102d1efe88e767c5efcaa53fb5
-SHA256sum: b7d105f793ed465cb7a32ee3ace73364936666e139f8b2895662512909ee0941
+Size: 16965
+MD5Sum: a6ff68a8ec68aae9391983ed03e2c776
+SHA256sum: 31f2dabd819c7477958ad889d6165f9a89768b401bbd190f06f2fff648e9fc9f
 Description:  GNU database manager library
  GNU dbm is a set of database routines that use extendible hashing and
  works similar to the standard UNIX dbm routines.
 
-Package: libjpeg
-Version: 9a-1
-Depends: libc
-Source: feeds/packages/libs/libjpeg
-License: IJG
-LicenseFiles: README
-Section: libs
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Architecture: brcm2708
-Installed-Size: 94744
-Filename: libjpeg_9a-1_brcm2708.ipk
-Size: 95389
-MD5Sum: a3eb5058245f9f049bdc436b6cfca646
-SHA256sum: d8e25e284732c5ade8450dd887a7e68d128f3eb67e7e7b90677ba9f47a6ddfb9
-Description:  The Independent JPEG Group's JPEG runtime library
-
-Package: libmosquitto-ssl
-Version: 1.4.11-2
-Depends: libc, libpthread, librt, libcares, libopenssl
-Provides: libmosquitto
-Source: feeds/packages/net/mosquitto
-License: BSD-3-Clause
-LicenseFiles: LICENSE.txt
-Section: libs
-Require-User: mosquitto=200:mosquitto=200
-Maintainer: Karl Palsson <karlp@etactica.com>
-Architecture: brcm2708
-Installed-Size: 21686
-Filename: libmosquitto-ssl_1.4.11-2_brcm2708.ipk
-Size: 22558
-MD5Sum: 0011121fd8309fc04e411f3c1bb6cceb
-SHA256sum: 56e31c6f55cf9a4b543ccb97006fdec33c8a1bc1c54a2fdc55efe6f8fdd8bd22
-Description:  Library required for mosquitto's command line client tools, also for
- use by any third party software that wants to communicate with a
- mosquitto server.
- 
- Should be useable for communicating with any MQTT v3.1/3.1.1 compatible
- server, such as IBM's RSMB, in addition to Mosquitto
- This package is built with SSL support
-
 Package: libsqlite3
-Version: 3170000-1
+Version: 3190200-1
 Depends: libc, libpthread
 Source: feeds/packages/libs/sqlite3
 License: PUBLICDOMAIN
 Section: libs
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Architecture: brcm2708
-Installed-Size: 334993
-Filename: libsqlite3_3170000-1_brcm2708.ipk
-Size: 335745
-MD5Sum: 2e048d48c7d8099d7809581b08ec8ae5
-SHA256sum: c2d6fb81ddbc19684718b450a327d7af7fbbbfcfe1d67728190fd372d9bb841d
+Installed-Size: 337017
+Filename: libsqlite3_3190200-1_brcm2708.ipk
+Size: 337622
+MD5Sum: d864711bf96c318ee58062a100078b4b
+SHA256sum: 42b05ff9b1a7a6e20be88b73f9fda4f30131234229ceea2086cfb9ed6cf257f8
 Description:  SQLite is a small C library that implements a self-contained, embeddable,
  zero-configuration SQL database engine.
  This package contains the SQLite (v3.x) shared library, used by other
  programs.
-
-Package: libtiff
-Version: 4.0.7-1
-Depends: libc, zlib, libjpeg
-Source: feeds/packages/libs/tiff
-License: BSD
-LicenseFiles: COPYRIGHT
-Section: libs
-Maintainer: Jiri Slachta <jiri@slachta.eu>
-Architecture: brcm2708
-Installed-Size: 126581
-Filename: libtiff_4.0.7-1_brcm2708.ipk
-Size: 126584
-MD5Sum: 198d24a7bdc425f341f9f12075438c9d
-SHA256sum: 223543fb3488907e5798db2150ec8e8dbe5621d24ce9ffd650752197e411b614
-Description:  TIFF library
 
 Package: libxml2
 Version: 2.9.4-1
@@ -195,48 +101,12 @@ LicenseFiles: COPYING
 Section: libs
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: brcm2708
-Installed-Size: 469760
+Installed-Size: 469753
 Filename: libxml2_2.9.4-1_brcm2708.ipk
-Size: 468017
-MD5Sum: 53dc43c222da94e77212e4d39a38bd7a
-SHA256sum: 3d7b9062604e647397a9334b4a32c18f1024ce16be7b3644b4d7969defd9f194
+Size: 467938
+MD5Sum: d644d0acf261d0901d0017fde37ae281
+SHA256sum: e2cdd567b3273102d6d2f868a26db9583d75d945c695d774fd108a8775fc3e1d
 Description:  A library for manipulating XML and HTML resources.
-
-Package: mosquitto-client-ssl
-Version: 1.4.11-2
-Depends: libc, librt, libuuid, libcares, libmosquitto-ssl
-Provides: mosquitto-client
-Source: feeds/packages/net/mosquitto
-License: BSD-3-Clause
-LicenseFiles: LICENSE.txt
-Section: net
-Require-User: mosquitto=200:mosquitto=200
-Maintainer: Karl Palsson <karlp@etactica.com>
-Architecture: brcm2708
-Installed-Size: 15736
-Filename: mosquitto-client-ssl_1.4.11-2_brcm2708.ipk
-Size: 16393
-MD5Sum: f510330ed93031c45b87a28d2cf1b33c
-SHA256sum: 3de7e7179c9f417fc6b288baef7da085b5ff4782d605716daddaed76fbb11134
-Description:  Command line client tools for publishing messages to MQTT servers
- and subscribing to topics.
- This package is built with SSL support
-
-Package: pillow
-Version: 3.3.1-1
-Depends: libc, python, libfreetype, libjpeg, zlib, libtiff
-Source: feeds/packages/lang/python/pillow
-License: CUSTOM
-LicenseFiles: LICENSE
-Section: lang
-Maintainer: Gergely Kiss <mail.gery@gmail.com>
-Architecture: brcm2708
-Installed-Size: 344787
-Filename: pillow_3.3.1-1_brcm2708.ipk
-Size: 344217
-MD5Sum: d5560d3779aca76a0dbf9c926bc2beb7
-SHA256sum: a3b0ded17e513fa7cd4891ab275b03116569d66b93303a645a5fa58989fadd5e
-Description:  The friendly PIL fork
 
 Package: python-base
 Version: 2.7.13-5
@@ -247,11 +117,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 716783
+Installed-Size: 716749
 Filename: python-base_2.7.13-5_brcm2708.ipk
-Size: 712101
-MD5Sum: 0b74813dd0d0e84dd661adf3204d81e9
-SHA256sum: 8833a68ec6f72802d5b1b750b488f50b2aacba3c11e9a02723d046d0cbdabc13
+Size: 711994
+MD5Sum: 36357ee6a0eec11c00b032be7e821710
+SHA256sum: 692f6357c6ed9bbe050a3dac402d36e8475afe00346088543ec5857246d49edf
 Description:  This package contains only the interpreter and the bare minimum
  for the interpreter to start.
 
@@ -264,11 +134,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 696284
+Installed-Size: 696250
 Filename: python-codecs_2.7.13-5_brcm2708.ipk
-Size: 680659
-MD5Sum: a0464c54876a82393a1fc2d3621c0e1a
-SHA256sum: 52b371895f833e5645736c26167f8b45a8ccb40924d7ecb63af40c9e55a24d4e
+Size: 680674
+MD5Sum: f45014a94be38e9027c8e7258e47e5f5
+SHA256sum: 0ed216318fa8dab350eccf5d13b26d91356d379312e3f02d36b5ff67cbca8e54
 Description:  Python 2.7 codecs + unicode support
 
 Package: python-compiler
@@ -280,11 +150,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 59767
+Installed-Size: 59760
 Filename: python-compiler_2.7.13-5_brcm2708.ipk
 Size: 60686
-MD5Sum: 223844c097c2e738ee5941c7647766a9
-SHA256sum: a5acffe1ab4a6bbc79d9007aaeb334e148fe5d4bc88e491d78f6eae02db0f7e5
+MD5Sum: ee8f1d0c67c3562607a5868c2c7e9698
+SHA256sum: 4aeecc43d9d0ae2df7554c362993ccdf4f18f1b6cef4634ec9a19aad3a3f6e0f
 Description:  Python 2.7 compiler module
 
 Package: python-ctypes
@@ -296,11 +166,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 59908
+Installed-Size: 60045
 Filename: python-ctypes_2.7.13-5_brcm2708.ipk
-Size: 60628
-MD5Sum: 4ab3d20d69ad4a43b0f6cbbffc13456e
-SHA256sum: f21747ff8dfbc011a4316e3f8e525f7b6661cd12dbe792cbab313424c36bbbdf
+Size: 60810
+MD5Sum: f1d384a29193fce5a5787763302b33d7
+SHA256sum: 500f97ed34e94effc2c01f9c1275fab75a820894a789876df5a5635229a49d22
 Description:  Python 2.7 ctypes module
 
 Package: python-db
@@ -312,11 +182,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 72436
+Installed-Size: 72431
 Filename: python-db_2.7.13-5_brcm2708.ipk
-Size: 72745
-MD5Sum: a757be645dc02944908c530af5164c11
-SHA256sum: 07a65ba29062c302f18aee71afe0c11e2bea20f50291419b797326dbb7555be7
+Size: 72744
+MD5Sum: df09a6ae49272925ab51e9b6ccf1a406
+SHA256sum: b10886741473e04cacb7367daf5d57a00ed3d94228e7f4337e2ffc657dbc4925
 Description:  Python 2.7 db module
 
 Package: python-decimal
@@ -328,11 +198,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 48951
+Installed-Size: 48953
 Filename: python-decimal_2.7.13-5_brcm2708.ipk
-Size: 49818
-MD5Sum: 4253ec004b108197b92e43f2b8133cc1
-SHA256sum: 2c68291541f2ca2b9aea0ff13b277d50721340477ddad7d4c394571d02872e46
+Size: 49811
+MD5Sum: d2288daea8aea2ba8ced4a46d901c7a1
+SHA256sum: f99a54db84d54ad6df9d1a83df0b746b00ca3e97caaf17530ee70f0f2e79b28b
 Description:  Python 2.7 decimal module
 
 Package: python-dev
@@ -344,11 +214,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 1758355
+Installed-Size: 1758214
 Filename: python-dev_2.7.13-5_brcm2708.ipk
-Size: 1755802
-MD5Sum: e19aa18cdd2c4fa7ce44e6ac4f34f5e8
-SHA256sum: d806320c50479a4fb8a56bef6dcb8af5270d85be2c8cd384e33431c81d04ca6b
+Size: 1755681
+MD5Sum: 3b56a23e9c2c4be73e6194d8e77a6520
+SHA256sum: 6d1308f061a42bbfce84cc56c6fdf9c9ba17bdbae4660647cf6527818fb38a61
 Description:  Python 2.7 development files
 
 Package: python-distutils
@@ -360,11 +230,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 174572
+Installed-Size: 174565
 Filename: python-distutils_2.7.13-5_brcm2708.ipk
-Size: 175496
-MD5Sum: c8502f4182c38e001a03c2c9396a73c5
-SHA256sum: 1c4548c71324857f8d2213ae3b0d5bce4dcd8f9ccea094bd2f916c8d8f192969
+Size: 175491
+MD5Sum: 52a232cb9d2e573c3f51642f185fbb8b
+SHA256sum: 1ba95df46606fb81fadadb1f4d91cc23c14cf60f1c47e89f445f2fd1b4019c71
 Description:  Python 2.7 distutils
 
 Package: python-email
@@ -376,11 +246,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 50216
+Installed-Size: 50220
 Filename: python-email_2.7.13-5_brcm2708.ipk
-Size: 51128
-MD5Sum: 7d18800b2fe174bd776ebd0350c5c71d
-SHA256sum: 850b10446529e4fe8e86fd25f23167edde5c19d151e4e673746fda153af655e8
+Size: 51116
+MD5Sum: de968cf5210510cc127ad2a2a3cabf63
+SHA256sum: 4173e59d946901899bff751bc7e8f54e3d8f1189d1693b3ee52d2cfd9e42a708
 Description:  Python 2.7 email module
 
 Package: python-gdbm
@@ -392,11 +262,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 5578
+Installed-Size: 5576
 Filename: python-gdbm_2.7.13-5_brcm2708.ipk
-Size: 6376
-MD5Sum: f0f6eb038d50e410f3f418c8e562bbf7
-SHA256sum: cccee926d884495e6268f597653d9df32b8a4da9888c3fd8e7ccf80f56ecfc22
+Size: 6366
+MD5Sum: b05c583dcc5eca5d1f9a1d83638cd4b5
+SHA256sum: a3ca638df3887a6ff378881a3bb6108e584c29a243a9a5e4938abfbf4e4e4d3d
 Description:  Python 2.7 gdbm module
 
 Package: python-lib2to3
@@ -408,11 +278,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 102833
+Installed-Size: 102854
 Filename: python-lib2to3_2.7.13-5_brcm2708.ipk
-Size: 103730
-MD5Sum: 3767c9dacfdea578657ed7742f8ef66e
-SHA256sum: 1e6ff626e79f1cc9a59c2cbc8141c48e0edfe2fe9cfffea741a66dd3e7d720a4
+Size: 103742
+MD5Sum: 01f29a981d21e8a730b094256cc476d4
+SHA256sum: 971afdda9e325ba5f216d107a15b7256531e5992a8da444658712b2156bf1fc6
 Description:  Python 2.7 lib2to3 module
 
 Package: python-light
@@ -424,11 +294,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 1421765
+Installed-Size: 1421726
 Filename: python-light_2.7.13-5_brcm2708.ipk
-Size: 1421659
-MD5Sum: 458633eac7aa4f805b947e9b29070792
-SHA256sum: 61c6a340387c0e185aec32d663e442ac3cec2bb65624272e1c1889e5bfbdd06f
+Size: 1421862
+MD5Sum: 006c085857665651e6371c91b73a52b0
+SHA256sum: df72909a1b701cab143cfbf89c7b9e45cff50fa984f64b3e9a7aca3d905ff326
 Description:  This package is essentially the python-base package plus
  a few of the rarely used (and big) libraries stripped out
  into separate packages.
@@ -442,11 +312,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 42500
+Installed-Size: 42498
 Filename: python-logging_2.7.13-5_brcm2708.ipk
-Size: 43375
-MD5Sum: 512f37f3b1ee42c0e78989c3e6f0382f
-SHA256sum: f6cec74050a101729769baca30c567459c59103ddb20569e716b38ffa999d904
+Size: 43368
+MD5Sum: 53eeff1d4bd7b52c3b22acfe8d38d50e
+SHA256sum: 5085b1de96e4eff18575fee707a97f797d0faa529ea31a41999bca2441f2e6e3
 Description:  Python 2.7 logging module
 
 Package: python-multiprocessing
@@ -458,11 +328,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 64599
+Installed-Size: 64597
 Filename: python-multiprocessing_2.7.13-5_brcm2708.ipk
-Size: 65380
-MD5Sum: d225df46e2800bf251e31508d8a88538
-SHA256sum: 61e28b029ec9b54907b1f36516c145efb7bc134f9d4cffe7071c9930fa1bc79a
+Size: 65376
+MD5Sum: e79994d60d4e76c8709e37d55c8676e9
+SHA256sum: de382456f9265518f9e3b33edf28986cedaff4459101c2b7e6a046d390487c17
 Description:  Python 2.7 multiprocessing
 
 Package: python-ncurses
@@ -474,11 +344,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 31187
+Installed-Size: 31184
 Filename: python-ncurses_2.7.13-5_brcm2708.ipk
-Size: 31807
-MD5Sum: e48103a29733b76a8e83d79254586e24
-SHA256sum: a7e07cefa151d075d1a9f809830597c35a49b0973d84412475cf5a92a6e30370
+Size: 31811
+MD5Sum: a78674494540dd700a2a6c8eed1e3ba6
+SHA256sum: b29fed3bc05cddcd33d7030b435a8d9b5f6c5d9d992594dd8b50449c9a2e48b9
 Description:  Python 2.7 ncurses module
 
 Package: python-openssl
@@ -490,44 +360,12 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 33999
+Installed-Size: 33998
 Filename: python-openssl_2.7.13-5_brcm2708.ipk
-Size: 34615
-MD5Sum: 1229d56f1c487b4719ee4d92f9576e4d
-SHA256sum: be161bb336a0fd374ff5a67e9a5444a5a07fb44a4725249afdfc1be516d7e41b
+Size: 34604
+MD5Sum: 13eaf781c1b6bd70f060856eeb76794e
+SHA256sum: c8d0ed089455563bff43712b7267c8971bbe2813f86ebe4a74943284aaec04e8
 Description:  Python 2.7 SSL module
-
-Package: python-pip-conf
-Version: 2.7.13-5
-Depends: libc
-Source: feeds/packages/lang/python/python
-License: PSF
-LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
-Section: lang
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Architecture: brcm2708
-Installed-Size: 212
-Filename: python-pip-conf_2.7.13-5_brcm2708.ipk
-Size: 989
-MD5Sum: 185b027c97e66548a0273ab4a5cf187e
-SHA256sum: b397842aa2bc3e3a0979d4df150b4d9a92a3d96663a2fc11be7751aef30141c6
-Description:  Configuration file for pip/pip3
-
-Package: python-pip
-Version: 9.0.1
-Depends: libc, python, python-setuptools, python-pip-conf
-Source: feeds/packages/lang/python/python
-License: PSF
-LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
-Section: lang
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Architecture: brcm2708
-Installed-Size: 1399259
-Filename: python-pip_9.0.1_brcm2708.ipk
-Size: 1379201
-MD5Sum: 327ef5bb9e738b32c92d42c2a3320dad
-SHA256sum: efe3e744afc98ffe94af0b9592f4f37a98e9d754bcc6dfa577cca37e8be3a4d2
-Description:  Python 2.7 pip module
 
 Package: python-pydoc
 Version: 2.7.13-5
@@ -538,11 +376,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 180366
+Installed-Size: 180357
 Filename: python-pydoc_2.7.13-5_brcm2708.ipk
-Size: 180941
-MD5Sum: 77cac5bf9d07b8f0621dd8386da70ffd
-SHA256sum: 038538851eca9e99527f85a27742bc2287754f72dfb3481005d53e5610032ce9
+Size: 180929
+MD5Sum: 27ddc41c628a9b0b84c824726275d34f
+SHA256sum: b04d3f380cf01490fd76964439c915a624b9fae7a38860d190ad7aad1181a966
 Description:  Python 2.7 pydoc module
 
 Package: python-setuptools
@@ -554,11 +392,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 513868
+Installed-Size: 513855
 Filename: python-setuptools_28.8.0_brcm2708.ipk
-Size: 514793
-MD5Sum: 563e0e6cc5baad507c81a6789c62e61d
-SHA256sum: 20974a1195f30a4ad092f5ad64ebb70c81a5d8fd9a2c2274ed73e87898ba22fc
+Size: 514784
+MD5Sum: d1816a19055a9526e811b8dcd123319b
+SHA256sum: 2bb8ca57fae22745f40a80968c062446300622dcd90cd9379304dfd08dabe11e
 Description:  Python 2.7 setuptools module
 
 Package: python-sqlite3
@@ -570,11 +408,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 26218
+Installed-Size: 26214
 Filename: python-sqlite3_2.7.13-5_brcm2708.ipk
-Size: 26765
-MD5Sum: 477175f8dca4fd4c64b514c13db8ce40
-SHA256sum: 31ebd2189a5d18e4569a627c4dd0370e7d16d6339e3327a07d1d94f0bca9ecf7
+Size: 26759
+MD5Sum: 69f64e1733b095d76087f2e7af9b3273
+SHA256sum: 35ba1cd03a011fe59630f2b56f350763a21fded031644a3ea6c9522b2e5c23f6
 Description:  Python 2.7 sqlite3 module
 
 Package: python-unittest
@@ -586,11 +424,11 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 33384
+Installed-Size: 33382
 Filename: python-unittest_2.7.13-5_brcm2708.ipk
-Size: 34256
-MD5Sum: 9befecb2bac4695c20ee44185b960f6f
-SHA256sum: e72f7881cbcc4fa1c9a5553e8042a1ba6120f67fa0f13f7c5f324b57915f9ec2
+Size: 34246
+MD5Sum: 559788017345bf074579faa5fe89e7a4
+SHA256sum: 4797a4658142170ad8eeeea064bfbe68795850fa0076ac344e4e6f175ca1b392
 Description:  Python 2.7 unittest module
 
 Package: python-xml
@@ -602,27 +440,27 @@ LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 170985
+Installed-Size: 170978
 Filename: python-xml_2.7.13-5_brcm2708.ipk
-Size: 171768
-MD5Sum: 21780d1f155ee7ae322b9e775100dd37
-SHA256sum: 15d157b2b4783025167eff60a24c23c89eb74aa7144b38c06dc785decd3cf7af
+Size: 171713
+MD5Sum: 6342c34cd36dcbbd7f6d1b2d106c0f74
+SHA256sum: 0bbf22b5ebe6becfd6e6dc1bf06ca59b2075cecb1e1eee7e336c279baead912c
 Description:  Python 2.7 xml libs
 
 Package: python
 Version: 2.7.13-5
-Depends: libc, python-light, python-ctypes, python-pydoc, python-multiprocessing, python-codecs, python-sqlite3, python-logging, python-gdbm, python-email, python-distutils, python-openssl, python-xml, python-compiler, python-db, python-decimal, python-unittest, python-ncurses
+Depends: libc, python-light, python-ctypes, python-pydoc, python-multiprocessing, python-logging, python-codecs, python-sqlite3, python-xml, python-gdbm, python-email, python-distutils, python-openssl, python-compiler, python-db, python-decimal, python-unittest, python-ncurses
 Source: feeds/packages/lang/python/python
 License: PSF
 LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: brcm2708
-Installed-Size: 105
+Installed-Size: 103
 Filename: python_2.7.13-5_brcm2708.ipk
-Size: 1015
-MD5Sum: d8f0c195e85d4ad4d7df12d64d397707
-SHA256sum: 5754f41db2ee6a42a2fa71ad2b6c3ad1cf81552cafb4565363c42d8ab4853d6f
+Size: 1010
+MD5Sum: d03ae567885fa933fa87b4b07e702bb0
+SHA256sum: b2848b3d4583a204c9194102d2154e6f06b648b108ba44e51d8366a57cd82653
 Description:  This package contains the (almost) full Python install.
  It's python-light + all other packages.
 
