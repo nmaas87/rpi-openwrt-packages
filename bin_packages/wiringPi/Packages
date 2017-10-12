@@ -4,11 +4,11 @@ Depends: libc, libi2c
 Source: feeds/wiringPi/feeds/wiringPi/i2c-tools-clone
 Section: utils
 Architecture: brcm2708
-Installed-Size: 15822
+Installed-Size: 15826
 Filename: i2c-tools-clone_2017-04-07-3.1.2+_brcm2708.ipk
-Size: 16497
-MD5Sum: 1fd3d249a82a1a2037001fa7253ce297
-SHA256sum: 26f298d4fc2345d9b8505cd838a79f5c0b7d4f2378e828bf4465cfe02b09b2e6
+Size: 16412
+MD5Sum: 5f72a2627e7a13267c7cf7c3e791cf6e
+SHA256sum: e3c3d80a2782f65bbb377e68820a392a614ed8e0760641a8a038a5501eba43ea
 Description:  This package contains an heterogeneous set of I2C tools for Linux. These tools
  were originally part of the lm-sensors package.  It is a clone of the lm-sensor's I2C package
  as the website and GIT dissappeared.
@@ -19,11 +19,11 @@ Depends: libc
 Source: feeds/wiringPi/feeds/wiringPi/i2c-tools-clone
 Section: libs
 Architecture: brcm2708
-Installed-Size: 1871
+Installed-Size: 1875
 Filename: libi2c_2017-04-07-3.1.2+_brcm2708.ipk
-Size: 2565
-MD5Sum: 91c7baaf6cf65d385fb31c8997f562f6
-SHA256sum: 82cdb3492833a700b8a6497c0571952040a62cd216954333132fdc76e956e8e9
+Size: 2572
+MD5Sum: ffb192b010b3123fcad6a95ca9276c32
+SHA256sum: 8a9e98a29eff66db59c857c48cd6bc2f39aa6186ceb1e2bf82daa7a342cad4bf
 Description:  I2C-clone library
 
 Package: liboniondebug
@@ -32,11 +32,11 @@ Depends: libc
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 1125
+Installed-Size: 1128
 Filename: liboniondebug_0.4-1_brcm2708.ipk
-Size: 1794
-MD5Sum: e1c92c9d4b503e856829baf6a0e9704b
-SHA256sum: 9cbb399844eb5a0e557b37126f2f82dc21b36c1301cd11be2fd681fa6bde3409
+Size: 1800
+MD5Sum: f6d5fb2fffb4892848a893a650c9b1c5
+SHA256sum: 052fa9d4e2bc8b23a2d81427e451b58461beee872a77bfad6e15465992a88db2
 Description:  Library used to ease debug
 
 Package: libonioni2c
@@ -45,11 +45,11 @@ Depends: libc, liboniondebug
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 2708
+Installed-Size: 2713
 Filename: libonioni2c_0.4-1_brcm2708.ipk
-Size: 3396
-MD5Sum: 36e4bf58cb28400c46b73a3f92833b8e
-SHA256sum: 24656bf5fa3ca46444cdb5a15671316e574dc71badd0558c6d61147b1ab281a2
+Size: 3409
+MD5Sum: 005d12299d4e118af7fb33d442d6332b
+SHA256sum: 53dedd182292f99d13801e721486428d69f6c7784efe1d54b71a143b93bd0bb4
 Description:  Library of I2C communication functions
 
 Package: libonionmcp23008
@@ -58,11 +58,11 @@ Depends: libc, liboniondebug, libonioni2c
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 1799
+Installed-Size: 1803
 Filename: libonionmcp23008_0.4-1_brcm2708.ipk
-Size: 2502
-MD5Sum: 86b9e3aeb5723fcf4ca446cfcd8b1e9c
-SHA256sum: 378ab3b96b28cf5b3155ad665b3c12cd4ff230787ae9994a106b3767cd062ca9
+Size: 2509
+MD5Sum: af194a9b328c71dfd8047b985407d4e5
+SHA256sum: 0c672d0dec06dcd395bdaa036bb3521ea6b0aef07b2ace40d75b8cf9a2fe856c
 Description:  Library of functions for MCP23008 chips
 
 Package: libonionoledexp
@@ -71,11 +71,11 @@ Depends: libc, liboniondebug, libonioni2c
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 4837
+Installed-Size: 4841
 Filename: libonionoledexp_0.4-1_brcm2708.ipk
-Size: 5510
-MD5Sum: 8d3c1e762488cf2e4b81b8fdedbe804b
-SHA256sum: a979a9183762cb13bad27bfc642326920b897e9ec99cf106e39cde44e67fae7d
+Size: 5522
+MD5Sum: 15b181bb855da563e929fb9cd09ad226
+SHA256sum: 2b3cfecf9ab9dea5541e12abec63aaad4aabff82b44ce26aa8cb912ed4ba12ea
 Description:  Library of functions to control the Onion OLED Expansion
 
 Package: libonionpwmexp
@@ -84,11 +84,11 @@ Depends: libc, liboniondebug, libonioni2c
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 2904
+Installed-Size: 2907
 Filename: libonionpwmexp_0.4-1_brcm2708.ipk
-Size: 3625
-MD5Sum: e8e24ad651b956efe61bc7247fb5067b
-SHA256sum: 4b4969a377d068cfc212a1dfc2bfb515236c514e6bd6df51e5f412dc29c31866
+Size: 3631
+MD5Sum: 82c5e7ec271a669eba60215157bbd22f
+SHA256sum: 780f898b3d93125cfbe4483f1b69337097a7689a835257a19f01ce147a0da1b0
 Description:  Library of functions to control the PWM Expansion
 
 Package: libonionrelayexp
@@ -97,11 +97,11 @@ Depends: libc, liboniondebug, libonioni2c, libonionmcp23008
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 1788
+Installed-Size: 1793
 Filename: libonionrelayexp_0.4-1_brcm2708.ipk
-Size: 2497
-MD5Sum: 20c6ef82303276898864908e164a5c17
-SHA256sum: f995322d163ebe1f999af117d919ba566b4e1db503f54d432fc89867c78345f3
+Size: 2514
+MD5Sum: e4155fd01f37a7554e301ab288b80404
+SHA256sum: bfc5f65241cdcd8052b929a803b31e3eea1d9da54b304c187c3f10896733e516
 Description:  Library of functions to control the Onion Relay Expansion
 
 Package: oled-exp
@@ -110,24 +110,24 @@ Depends: libc, liboniondebug, libonioni2c, libonionoledexp
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 6829
+Installed-Size: 6833
 Filename: oled-exp_0.4-1_brcm2708.ipk
-Size: 7573
-MD5Sum: 6a9e2b6732d6b070a08eddbbbe323a11
-SHA256sum: 92c590747978f68464ffa13929aa2c68a77356fa8f307e6713249d7192d502f3
+Size: 7572
+MD5Sum: 7a3faaf0f9e443fde900aa498bdb19cc
+SHA256sum: ee038a8b9f7ad34fd26eab27883a6e3671750f1dd67570fa5a609551eb94345e
 Description:  Driver for OLED Expansion
 
 Package: paho_mqtt
-Version: 1.3.0-1
+Version: 1.3.1-1
 Depends: libc, python, python-dev, python-setuptools
 Source: feeds/wiringPi/feeds/wiringPi/paho_mqtt
 Section: lang
 Architecture: brcm2708
-Installed-Size: 41495
-Filename: paho_mqtt_1.3.0-1_brcm2708.ipk
-Size: 42303
-MD5Sum: f8ef269b4797fa329aaab0efd9af8305
-SHA256sum: 56e7de414d38b046a6dec6643418e00a1a6040e45f3fd15e41441b793d4e2415
+Installed-Size: 42075
+Filename: paho_mqtt_1.3.1-1_brcm2708.ipk
+Size: 42905
+MD5Sum: a14acdbe84f61a19eb2d8dc7984fee0e
+SHA256sum: aed1c41b2fb9f1a7160e3268653c09e9b75eb9e5a59efeb5e9ed8114c2dfd9a2
 Description:  This package contains Python bindings for mqtt
 
 Package: pwm-exp
@@ -136,11 +136,11 @@ Depends: libc, liboniondebug, libonioni2c, libonionpwmexp
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 3242
+Installed-Size: 3247
 Filename: pwm-exp_0.4-1_brcm2708.ipk
-Size: 3919
-MD5Sum: 6a509b077529cbd8b53268c20e42502a
-SHA256sum: e1f9fbe21b8d9bbde06ea6d950611216cb3843cbe171011cfd060b58f751535d
+Size: 3932
+MD5Sum: 1493cbf968fa1656f1aca6e7950ab7ba
+SHA256sum: 03f1d68876f2375e555b5a9abd6a905d8da85a67c5989c62259f9cf8ce3fdf28
 Description:  Driver for Servo (PWM) Expansion
 
 Package: pyOledExp
@@ -149,11 +149,11 @@ Depends: libc, liboniondebug, libonioni2c, libonionoledexp, python-base, pyOmega
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 2980
+Installed-Size: 2983
 Filename: pyOledExp_0.4-1_brcm2708.ipk
-Size: 3659
-MD5Sum: 9b2f629cb2fc6bfce8106b9133fe8f17
-SHA256sum: e5c785da7ae1a0fc1a51f246d645c5f9f11c708db34aa37f860f41988c3cdf13
+Size: 3685
+MD5Sum: d01b340a576f635533f48bd51cccdc64
+SHA256sum: 13bbef5db248b767f8b2ea43445601e923553e671ab38fce520ac701d406e3c0
 Description:  Python module to control the Onion OLED Expansion
 
 Package: pyOmegaExpansion
@@ -162,11 +162,11 @@ Depends: libc, python-base
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 222
+Installed-Size: 223
 Filename: pyOmegaExpansion_0.4-1_brcm2708.ipk
-Size: 895
-MD5Sum: ec48cf434d52e79d2b21dfd3e6dbc4bb
-SHA256sum: 1e0af17ca6fa917e304168fef2da8cf4805f9a4526cf06ee9b5c4f0f7151b98f
+Size: 904
+MD5Sum: bd853bb2efb751badd643ede3ad847fa
+SHA256sum: 849811d828a14dfae931a47c742e95b75cf891c637f349a08ce72a0f403fcfb6
 Description:  Setup for OmegaExpansion Python Package
 
 Package: pyOnionI2C
@@ -175,11 +175,11 @@ Depends: libc, liboniondebug, libonioni2c, python-base, pyOmegaExpansion
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 3476
+Installed-Size: 3480
 Filename: pyOnionI2C_0.4-1_brcm2708.ipk
-Size: 4175
-MD5Sum: e2e76c260d70fd6ba57614613fa3cdec
-SHA256sum: 268dae75e63f05b4ba4dbe639055836ccb9c7d7504704afa923860ba08056f56
+Size: 4185
+MD5Sum: 24fde366348e7ca7b039be9181e6ce1f
+SHA256sum: a7a04051dddb23a232eb3e7a5b169b157185d7d40143540caa95ad715569a9c8
 Description:  Python module with object that implements I2C transactions
 
 Package: pyPwmExp
@@ -188,11 +188,11 @@ Depends: libc, liboniondebug, libonioni2c, libonionpwmexp, python-base, pyOmegaE
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 1869
+Installed-Size: 1873
 Filename: pyPwmExp_0.4-1_brcm2708.ipk
-Size: 2596
-MD5Sum: 2c9f86b4b163337ad2832471c19a883c
-SHA256sum: 6d1afcecc748ea57d77ed8e2e72365fa592080cf2fae7d500a683f8d9cd32853
+Size: 2612
+MD5Sum: 36fc48b310da8a44c3d1de8e698f88a2
+SHA256sum: dde1a8d3a9b1874adeb0d79b6bfa5e978721b565fa74aaf24beaf81e71684378
 Description:  Python module to control the Onion PWM Expansion
 
 Package: pyRelayExp
@@ -201,11 +201,11 @@ Depends: libc, liboniondebug, libonioni2c, libonionmcp23008, libonionrelayexp, p
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 1946
+Installed-Size: 1948
 Filename: pyRelayExp_0.4-1_brcm2708.ipk
-Size: 2681
-MD5Sum: eb5e0e2bf5b9d857c3b51fc118c0ed8f
-SHA256sum: 974b86e06fc86a9bbce056e602f662b7f456fc2feafe7c54bc904393ca87d579
+Size: 2685
+MD5Sum: 94fdb6548115dc01b0c3cf5a39c90628
+SHA256sum: 0fb5d7e18a1e3108355c4c447af243b28d5c2d441c9e5e5967824581fdbc66d7
 Description:  Python module to control the Onion Relay Expansion
 
 Package: python-smbus
@@ -214,11 +214,11 @@ Depends: libc, python-light, i2c-tools-clone
 Source: feeds/wiringPi/feeds/wiringPi/i2c-tools-clone
 Section: lang
 Architecture: brcm2708
-Installed-Size: 4639
+Installed-Size: 4641
 Filename: python-smbus_2017-04-07-3.1.2+_brcm2708.ipk
-Size: 5354
-MD5Sum: 2b653efb8ab645e4bb46dd1c82c73c74
-SHA256sum: b9c08088fda0f183aa234bbc08dfc8dbf7a9ef22df3e89ca477a81f2dcab6128
+Size: 5361
+MD5Sum: c7b089db2afd109a15367dd88d6439ae
+SHA256sum: 5e427751d4cbab49c60d07b2036639477926d92e976b1ecf8c818250009972d3
 Description:  This package contain the python bindings for Linux SMBus access through i2c-dev.
 
 Package: python-wiringpi2
@@ -227,11 +227,11 @@ Depends: libc, python, python-dev, python-setuptools, wiringPi, swig
 Source: feeds/wiringPi/feeds/wiringPi/python-wiringpi2
 Section: lang
 Architecture: brcm2708
-Installed-Size: 54815
+Installed-Size: 54821
 Filename: python-wiringpi2_2.44.0-1_brcm2708.ipk
-Size: 55052
-MD5Sum: 3bc6f0b7db763e129b73affec0414030
-SHA256sum: a44e975403ff54da5d7e5aa36c457809c0abed11c99ce8b81a64bfbfd0e86e21
+Size: 55022
+MD5Sum: 6abc1e5b4622b36c0184884d565bdbdf
+SHA256sum: e56134640de1c8f965fd49dc4b5cb0c0347df53a83a29ae872c27ddefb59f9be
 Description:  This package contains Python bindings for wiringpi2
 
 Package: relay-exp
@@ -240,11 +240,11 @@ Depends: libc, liboniondebug, libonioni2c, libonionmcp23008, libonionrelayexp
 Source: feeds/wiringPi/feeds/wiringPi/i2c-exp-driver
 Section: onion
 Architecture: brcm2708
-Installed-Size: 3447
+Installed-Size: 3454
 Filename: relay-exp_0.4-1_brcm2708.ipk
-Size: 4127
-MD5Sum: 3eb0f76956555c9a6634af3aef3c7d0f
-SHA256sum: 86bb3f513fd8de7e1a7aa5d45ebdc184c5f7ba589d3c10e2bda57e1fcaab8547
+Size: 4134
+MD5Sum: b73d50b551b80062eb43d02324f7c97d
+SHA256sum: 6cab0715c991452f71e5da5c8a0b2c50521c0728a3546bc7571463e66cf6767d
 Description:  Driver for Relay Expansion
 
 Package: ssd1306_i2c
@@ -253,11 +253,11 @@ Depends: libc, python-light
 Source: feeds/wiringPi/feeds/wiringPi/ssd1306_i2c
 Section: lang
 Architecture: brcm2708
-Installed-Size: 19643
+Installed-Size: 19644
 Filename: ssd1306_i2c_0.3-1_brcm2708.ipk
 Size: 20343
-MD5Sum: 50b0117abed9ec9d950fa3892c916e9b
-SHA256sum: a570503c064b5a3f80badd0ffe460e2ed409fd8ba39bd632ce3c22208dcaa3dd
+MD5Sum: 6d35e7961e4fc1fcf323267177dcd057
+SHA256sum: 2d9bee7792f169e860418415dabfe6ef4ea9a93a4e3607513c941607e7667f38
 Description:  serial port python bindings
 
 Package: wiringPi
@@ -266,10 +266,10 @@ Depends: libc, libpthread
 Source: feeds/wiringPi/feeds/wiringPi/wiringPi
 Section: libs
 Architecture: brcm2708
-Installed-Size: 57731
+Installed-Size: 57736
 Filename: wiringPi_2017-03-03-2.44_brcm2708.ipk
-Size: 57843
-MD5Sum: 45db47e45611232173fedfdd8bf3cc86
-SHA256sum: c118262536b3cd148f91932dad03c6b854e62cc51d4955162d5172866d598e5f
+Size: 57835
+MD5Sum: c6b8e364ccfceabb33cc471cc90d6403
+SHA256sum: 0ef7cd884e50b8d2c63d2bddc39e46e7262afeef58a48f1ae1d745172798d2b8
 Description:  C GPIO libraries for the RPI
 
