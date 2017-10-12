@@ -22,8 +22,8 @@ Another SSD1306 OLED Support for Python, based on Adafruit Code. I patched it to
 ### python-wiringpi2 2.44.0
 from [23.05.2017](https://pypi.python.org/pypi/wiringpi)
 
-### paho_mqtt 1.3.0
-from [02.07.2017](https://github.com/eclipse/paho.mqtt.python)
+### paho_mqtt 1.3.1
+from [12.10.2017](https://github.com/eclipse/paho.mqtt.python)
 
 ## How To:
 
